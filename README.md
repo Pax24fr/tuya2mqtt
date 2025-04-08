@@ -31,7 +31,7 @@ Script Python pour interroger des appareils Tuya (locaux et cloud) via TinyTuya 
 - **Passerelle Tuya → MQTT** : Publie les états sur `tuya/<nom>`.
 - **Contrôle** :
   - Local (avec IP) : toutes les 30s.
-  - Cloud : 600s par défaut, 60s en charge, 180s en attente.
+  - Cloud : 600s par défaut (veille), 60s si consommation.
 - **Consommation** : Calcule Wh pour appareils avec `power_code`.
 - **Commandes MQTT** : Envoie `{"code": "<code>", "value": <valeur>}` sur `tuya/<nom>/cmd`.
 - **Logs** : Dans `/var/www/html/log/tuya2mqtt.log` disponible dans Jeedom - Analyse - Logs.
